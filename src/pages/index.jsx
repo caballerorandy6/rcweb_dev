@@ -1,37 +1,10 @@
 import Layout from "../../components/Layout";
+import About from "./about";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import TypewriterReact from "../../components/Typewriter";
 import { motion } from "framer-motion";
-
-const linkVariants = {
-  hover: {
-    scale: 1.2,
-    transition: {
-      delay: 0.2,
-    },
-  },
-};
-
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-
-    transition: {
-      duration: 1,
-    },
-  },
-  exit: {
-    x: "100vw",
-    transition: {
-      ease: "easeInOut",
-      duration: 0.5,
-    },
-  },
-};
+import { containerVariants, linkVariants } from "../../helpers/animation";
 
 function Index() {
   return (

@@ -65,10 +65,28 @@ export const secondContentVariants = {
 export const linkVariants = {
   hover: {
     scale: 1.2,
-    textShadow: "0px 0px 8px rgb(255, 255, 255)",
     transition: {
-      delay: 0.2,
+      delay: 0.1,
     },
   },
 };
 
+export const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+
+    transition: {
+      duration: 1,
+    },
+  },
+  exit: {
+    x: "100vw",
+    transition: {
+      ease: "easeInOut",
+      duration: 0.5,
+    },
+  },
+};
