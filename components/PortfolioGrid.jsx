@@ -29,7 +29,9 @@ const PortfolioGrid = () => {
         </div>
         <div className="item-text">
           <div className="item-text-wrap">
-            <p className="item-text-category text-4xl font-bold p-1">RC WEB</p>
+            <p className="item-text-category text-4xl font-bold p-1">
+              Quisco App
+            </p>
             <p className="item-text-title text-2xl">
               React, NextJS, MySQL, Prisma, TailwindCSS, Framer Motion
             </p>
