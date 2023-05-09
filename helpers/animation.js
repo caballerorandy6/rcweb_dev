@@ -67,6 +67,7 @@ export const linkVariants = {
     scale: 1.2,
     transition: {
       delay: 0.1,
+      duration: 0.2,
     },
   },
 };

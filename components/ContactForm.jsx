@@ -1,11 +1,13 @@
 import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import ErrorMessage from "./ErrorMessage";
+import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import {
   firstContentVariants,
   secondContentVariants,
+  linkVariants,
 } from "../helpers/animation";
 import { toast } from "react-toastify";
 
@@ -136,24 +138,53 @@ export const ContactForm = () => {
         animate="visible"
         exit={"exit"}
       >
-        <h1 className="text-slate-200 text-3xl text-center font-semibold mb-10 xl:mb-16">
+        <h1 className="text-slate-200 text-3xl text-center font-semibold mb-6 xl:mb-16">
           Contact Information
         </h1>
+
         <div className="flex flex-col items-center mx-auto xl:w-10/12 w-11/12 gap-10">
-          <p className="text-blue-300 xl:text-xl text-md font-bold">
-            Phone:{" "}
-            <span className="text-white opacity-70">+1 (832)546-5983</span>
-          </p>
-          <p className="text-blue-300 xl:text-xl text-md font-bold">
-            Email:{" "}
-            <span className="text-white opacity-70">
-              caballerorandy6@gmail.com
-            </span>
-          </p>
-          <p className="text-blue-300 xl:text-xl text-md font-bold">
-            Address:{" "}
-            <span className="text-white opacity-70">Dickinson, TX</span>
-          </p>
+          <motion.a
+            variants={linkVariants}
+            whileHover="hover"
+            className="flex items-center justify-center gap-4 mx-auto gold"
+            href="tel: +18325465983"
+          >
+            <Image
+              src="/img/telephone.png"
+              width={30}
+              height={30}
+              alt="Telephone"
+              priority
+            />
+            Phone Number: +1 (832)546-5983
+          </motion.a>
+
+          <motion.a
+            variants={linkVariants}
+            whileHover="hover"
+            className="flex items-center justify-center gap-4 mx-auto gold"
+            href="mailto:caballerorandy6@gmail.com"
+          >
+            <Image
+              src="/img/mail.png"
+              width={30}
+              height={30}
+              alt="Email"
+              priority
+            />
+            caballerorandy6@gmail.com
+          </motion.a>
+
+          <div className="flex items-center justify-center gap-2 mx-auto gold">
+            <Image
+              src="/img/address.png"
+              width={30}
+              height={30}
+              alt="Email"
+              priority
+            />
+            <p className="gold">Houston, TX</p>
+          </div>
         </div>
       </motion.div>
     </div>

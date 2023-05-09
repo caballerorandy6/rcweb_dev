@@ -9,7 +9,7 @@ const Main = () => {
         alt="Background Image"
         layout="fill"
         objectFit="cover"
-        priority
+        priority={true}
       />
     </main>
   );

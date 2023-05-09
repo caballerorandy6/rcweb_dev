@@ -19,6 +19,38 @@ function Index() {
         animate="visible"
         exit="exit"
       >
+        <motion.a
+          variants={linkVariants}
+          whileHover="hover"
+          className="flex items-center justify-center gap-4 mx-auto mb-4 gold"
+          href="tel: +18325465983"
+        >
+          <Image
+            src="/img/telephone.png"
+            width={30}
+            height={30}
+            alt="Telephone"
+            priority
+          />
+          Phone Number: +1 (832)546-5983
+        </motion.a>
+
+        <motion.a
+          variants={linkVariants}
+          whileHover="hover"
+          className="flex items-center justify-center gap-4 mx-auto mb-10 gold"
+          href="mailto:caballerorandy6@gmail.com"
+        >
+          <Image
+            src="/img/mail.png"
+            width={30}
+            height={30}
+            alt="Email"
+            priority
+          />
+          caballerorandy6@gmail.com
+        </motion.a>
+
         <p className="text-white text-opacity-40 lg:text-7xl md:text-5xl sm:text-3xl text-2xl">
           {"Hello, I'm Randy Caballero"}
         </p>

@@ -70,8 +70,8 @@ const AboutPersonalInfo = () => {
             priority
           />
           <div>
-            <p className="text-slate-200 font-bold">50+ Meetings</p>
-            <p className="text-opacity-50 text-white text-sm">Successful</p>
+            <p className="text-slate-200 font-bold">25+ Meetings</p>
+            <p className="text-opacity-50 text-white text-sm">Successfull</p>
           </div>
         </div>
       </div>

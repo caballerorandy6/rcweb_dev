@@ -7,7 +7,7 @@ const Nav = () => {
   const router = useRouter();
 
   return (
-    <nav className="w-full sm:flex text-slate-200">
+    <nav className="w-full flex flex-col sm:flex-row  text-slate-200">
       <Link
         href="/"
         className="text-slate-200 font-bold p-4 sm:p-8 cursor-pointer bg-none text-2xl sm:text-3xl md:text-4xl lg:text-5xl mx-auto sm:w-3/12 w-4/12 sm:text-start text-center"
